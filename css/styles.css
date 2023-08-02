@@ -1,0 +1,53 @@
+:root {
+  --bg-colour: #f7cacb;
+  --second-bg-colour: #fce8e3;
+  --text-colour: #fafafa;
+  --main-colour: #ec729c;
+}
+
+body {
+  background: var(--bg-colour);
+  color: var(--text-colour);
+}
+
+.header {
+  background: var(--bg-colour);
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.name-logo {
+  font-size: 20px;
+  color: var(--text-colour);
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  font-size: 17px;
+  color: var(--text-colour);
+  transition: ease-in-out;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-colour);
+}
+
+#menu-icon {
+  font-size: 20px;
+  color: var(--text-colour);
+}
+
+html {
+  font-size: 102.5%;
+  overflow: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 9%;
+}
