@@ -23,36 +23,128 @@
     <title>Portfolio Page | Chisom Okoro</title>
   </head>
   <body>
-    <div class="container">
-      <header
-        class="header position-fixed top-0 start-0 w-100 p-5 d-flex justify-content-between align-items-center"
-      >
-        <a href="#" class="name-logo ms-5">Chisom Okoro</a>
-        <i class="bx bx-menu d-none" id="menu-icon"></i>
-        <nav class="navbar">
-          <a href="#home" class="me-3 active">Home</a>
-          <a href="#about" class="me-3">About</a>
-          <a href="#projects" class="me-3">Projects</a>
-          <a href="#contact" class="me-3">Contact</a>
-        </nav>
-      </header>
-      <section class="home" id="home">
-        <div class="home-content">
-          <br />
-          <br />
-          <h3>Hey It's Me</h3>
-          <h1>Chisom Okoro</h1>
-          <h3>Your Go-To <span>Frontend Developer</span></h3>
-          <p>
-            Welcome to my Portfolio Page showcasing the innovative projects I've
-            crafted with code and creativity.
-          </p>
-          <div class="social-platform">
-            <a href=""></a>
-            <a href=""></a>
+    <header
+      class="header position-fixed top-0 start-0 w-100 p-5 d-flex justify-content-between align-items-center"
+    >
+      <a href="#" class="name-logo ms-5">Chisom Okoro</a>
+      <i class="bx bx-menu d-none" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="me-3 active">Home</a>
+        <a href="#about" class="me-3">About</a>
+        <a href="#projects" class="me-3">Projects</a>
+        <a href="#contact" class="me-3">Contact</a>
+      </nav>
+    </header>
+    <section
+      class="home d-flex justify-content-center align-items-center"
+      id="home"
+    >
+      <div class="home-content">
+        <br />
+        <br />
+        <h3>Hey It's Me</h3>
+        <h1>Chisom Okoro</h1>
+        <h3>Your Go-To <span>Frontend Developer</span></h3>
+        <p>
+          Welcome to my Portfolio Page showcasing the innovative projects I've
+          crafted with code and creativity.
+        </p>
+        <div
+          class="social-platform d-inline-flex justify-content-center align-items-center"
+        >
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+        <div>
+          <a href="#" class="btn">Download CV</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="images/IMG_7720.jpeg" class="m-5 rounded" alt="" />
+      </div>
+    </section>
+
+    <section
+      class="about d-flex justify-content-center align-items-center"
+      id="about"
+    >
+      <div class="about-img">
+        <img src="images/IMG_7720.jpeg" class="rounded" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          As an Actuarial Science graduate, I have always been captivated by the
+          beauty and logic of mathematics. My passion for numbers has driven me
+          to explore various fields, constantly seeking new challenges and
+          opportunities. I discovered my fascination with front-end development,
+          where I can combine my problem-solving skills with creativity to craft
+          engaging digital experiences. It's an exhilarating journey of
+          continuous learning and growth, and I'm eager to embrace every aspect
+          of it. Through my portfolio, I invite you to witness the seamless
+          fusion of my love for mathematics and technology, as I strive to
+          create meaningful and impactful solutions in the digital world.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="portfolio" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="row">
+          <div class="col-4 portfolio-box">
+            <img
+              src="images/Screenshot 2023-07-17 at 19.14.37.png"
+              class="rounded"
+              alt=""
+            />
+            <div class="portfolio-layer">
+              <h4>World Clock</h4>
+              <p>
+                Web application displaying current time and date for multiple
+                cities. Utilises Moment.js library for real-time time and date
+                updates. User-friendly interface with predefined sections for
+                popular cities.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="col-4 portfolio-box">
+            <img
+              src="images/Screenshot 2023-07-17 at 19.14.37.png"
+              class="rounded"
+              alt=""
+            />
+            <div class="portfolio-layer">
+              <h4>Weather App</h4>
+              <p>
+                Web application for searching weather information, including
+                current conditions, 5-day forecast, and hourly forecast.
+                Integration of APIs and dynamic background image updates based
+                on weather conditions.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="col-4 portfolio-box">
+            <img
+              src="images/Screenshot 2023-07-17 at 19.14.37.png"
+              class="rounded"
+              alt=""
+            />
+            <div class="portfolio-layer">
+              <h4>Hobby Landing Page</h4>
+              <p>
+                Hobby landing page with a theme switcher, interactive images,
+                and engaging content showcasing travel destinations.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
