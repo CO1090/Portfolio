@@ -407,6 +407,19 @@ section {
   .home-img img {
     width: 70vw;
     margin-top: 40px;
+    animation: floatImage 4s ease-in-out infinite;
+  }
+
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-24px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .about {
