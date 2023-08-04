@@ -132,6 +132,7 @@ section {
 .home-img img {
   width: 35vw;
   margin-left: 20px;
+  border-radius: 20%;
 }
 
 .btn {
@@ -153,6 +154,7 @@ section {
 
 .about-img img {
   width: 35vw;
+  border-radius: 20%;
 }
 
 .about {
@@ -327,10 +329,135 @@ section {
 }
 
 .footer-icon a:hover {
-  box-shadow: 0 0 10px var(--main-colour);
+  box-shadow: 0 0 10px var(--maixn-colour);
 }
 
 .footer-icon a i {
   font-size: 24px;
   color: var(--second-bg-colour);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 20px 3%;
+  }
+
+  section {
+    padding: 100px 3% 20px;
+  }
+
+  footer {
+    padding: 20px 3%;
+  }
+
+  .portfolio {
+    padding-bottom: 70px;
+  }
+
+  .contact {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 3%;
+    background: var(--bg-colour);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 20px;
+    margin: 30px;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home-content h3 {
+    font-size: 26px;
+  }
+
+  .home-content h1 {
+    font-size: 50px;
+  }
+
+  .home-img img {
+    width: 70vw;
+    margin-top: 40px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about img {
+    width: 70vw;
+    margin-top: 40px;
+  }
+
+  .portfolio h2 {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 617px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 365px) {
+  .home-img img {
+    width: 90vw;
+  }
+
+  .about-img img {
+    width: 90vw;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer p {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
